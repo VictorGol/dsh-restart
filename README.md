@@ -43,8 +43,8 @@
 ## 兼容性
 
 - macOS 桌面版 DSH 0.2.x：实测通过（点按钮后窗口关闭，约 4 秒后重新打开）
+- Windows 桌面版 DSH 0.2.x：实测通过（直接执行应用可执行文件；该平台没有 `ps` 校验，所以只有一次启动尝试，起来后应用自己恢复窗口）
 - 终端 `dsh web`：按原命令重启 Host（未在真机单独验证）
-- Windows 桌面版：按同样的 helper 逻辑直接执行应用可执行文件，未在 Windows 真机验证；该平台无法用 `ps` 校验启动结果，只会有一次启动尝试
 
 ## 卸载
 
@@ -79,7 +79,7 @@ The click sends `POST /dsh-restart/restart` (loopback only, custom-header fenced
 
 ### Compatibility
 
-Verified on the macOS desktop app (DSH 0.2.x). The Windows fallback launches the executable directly and cannot verify the result; it is untested on a real Windows machine.
+Verified on the macOS and Windows desktop apps (DSH 0.2.x). On Windows the helper launches the executable directly and cannot verify the result, so it makes a single launch attempt; the application restores its own window.
 
 ## License
 
