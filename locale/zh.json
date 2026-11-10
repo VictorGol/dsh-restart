@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "重启 DSH",
+    "description": "在插件页标题右侧添加一个小按钮，点击即可重启 DeepSeek Harness，让插件改动立即生效。"
+  }
+}

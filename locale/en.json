@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Restart DSH",
+    "description": "Adds a small button beside the Plugins page title that restarts DeepSeek Harness so plugin changes take effect."
+  }
+}
